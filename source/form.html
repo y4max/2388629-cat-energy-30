@@ -60,145 +60,107 @@
           <li class="navigation__item"><a class="navigation__link" href="form.html">подбор программы</a></li>
         </ul>
         <button class="button__menu" type="button">Меню</button>
-        <h1 class="visually-hidden">Кэт Энерджи</h1>
-        <h2 class="navigation__heading">Функциональное питание для котов</h2>
-        <p class="navigation__text">Занялся собой? Займись котом!</p>
-        <a href="form.html" class="button button--primary">подобрать программу</a>
-        <img class="navigation__feed_packaging" src="../source/images/index-can@2x.jpg" width="552" height="499"
-          alt="Упаковка корма с курицей.">
-        <img class="navigation__img" src="../source/images/cat@2x.jpg" width="720" height="694" alt="Кот Кекс.">
       </nav>
     </header>
-    <main class="main">
-      <section class="main__services_proper--nutrition">
-        <div class="main__services_container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="106" fill="none" viewbox="0 0 100 106">
-            <circle cx="50" cy="56" r="50" fill="#68B738" />
-            <g clip-path="url(#a)">
-              <path fill="#000"
-                d="M69.84 0h-.38A3.5 3.5 0 0 0 68 1.59 15.54 15.54 0 0 0 66.71 5a1.63 1.63 0 0 1-1.48 1.34A7.34 7.34 0 0 0 60 10.12a27.31 27.31 0 0 0-1.85 4c-1.42 3.68-2.51 7.48-3.85 11.19C53.67 27 53.64 27 51.74 27c-2.27 0-2.11-.35-2.14 2.15 0 .79.24 1.19 1.08 1.15.26 0 .65-.13.75.21.1.34-.24.49-.44.69a9 9 0 0 1-4.33 2.44c-1.9.51-3.84.91-5.69 1.53-4.75 1.59-9.14 3.81-12.56 7.57a28 28 0 0 0-4.74 7.84c-3.67 8.64-5.45 17.74-6.83 26.93-.65 4.31-1.11 8.64-1.46 13C15.2 92.65 15 94.82 15 97h33.33a2.18 2.18 0 0 0-.23-1.28 5 5 0 0 0-3.83-3.07c-.7-.16-.78-.37-.35-.92a10.348 10.348 0 0 0 1.59-3.1c1.63-4.81 2.26-9.83 3.05-14.8A30.001 30.001 0 0 1 52 63a21.6 21.6 0 0 1 5.59-6.37c.83-.63.86-.63 1 .44.1.71.12 1.44.17 2.16.3 4.724.24 9.465-.18 14.18a61.669 61.669 0 0 0-.15 11A75.16 75.16 0 0 0 60.7 97H74a5.41 5.41 0 0 0-4.24-4.44 9 9 0 0 0-3.76.2c-.6.14-.85 0-.9-.65a56.351 56.351 0 0 1 1-15.82 177.734 177.734 0 0 0 3.06-18.18 17.75 17.75 0 0 1 2.28-7c1.19-2.12 2.23-4.32 3.4-6.45a5.871 5.871 0 0 0 .42-5.19c-.27-.71-.53-1.43-.86-2.11-1-1.95-2-3.88-2.92-5.85-.49-1-.38-1.12.71-1.15 1.63 0 1.63 0 1.66-1.64v-.66c0-.69-.26-1.07-1-1h-1.52c-.69 0-.89-.29-.72-1a6.24 6.24 0 0 1 5.13-4.43 22 22 0 0 1 6.62.43 1 1 0 0 0 1.25-.64c.4-1 .84-2 1.29-3a1 1 0 0 0-.1-1.14C81.6 13.22 78.13 9.43 73.4 7a1.49 1.49 0 0 1-.88-1.12 19.599 19.599 0 0 0-1.27-4.16A3.5 3.5 0 0 0 69.84 0Z" />
-            </g>
-            <defs>
-              <clippath>
-                <path fill="#fff" d="M15 0h70v97H15z" />
-              </clippath>
-            </defs>
-          </svg>
-          <h3 class="main__service--header">похудение</h3>
-          <p class="main__service--text text--content">Ваш кот весит больше собаки и почти утратил способность лазить по
-            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="main__services_catalog-section" href="#"><span class="main__link--text">каталог slim</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="12" fill="none">
-              <path stroke="#000" stroke-width="2" d="M0 6h18" />
-              <path fill="#000" d="m24 6-6.75 5.196V.804L24 6Z" />
+    <main class="main__program">
+      <section class="section__cat_data">
+        <h2 class="main__program_title">Подбор программы</h2>
+        <p class="main__program_text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="form__cat" action="#" method="get">
+          <fieldset class="cat__data">
+            <label class="cat__data_name"><span class="">ИМЯ:*</span>
+              <input class="cat__data_placeholder" type="text" name="барсик" placeholder="БАРСИК">
+            </label>
+            <label class="cat__data_weight"><span class="">Вес (кг):*</span>
+              <input class="cat__data_placeholder" type="text" name="барсик" placeholder="7">
+            </label>
+            <label class="cat__data_age"><span class="">Возраст (лет):</span>
+              <input class="cat__data_placeholder" type="text" name="барсик" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="radio__container">
+            <div class="radio__group">
+              <label class="control">
+                <input class="control__input" type="radio" name="product-group" value="weight loss" checked>
+                <span class="radio"></span>
+                <span class="control__label">похудение</span>
+              </label>
+            </div>
+            <div class="radio__group">
+              <label class="control">
+                <input class="control__input" type="radio" name="product-group" value="weight gain">
+                <span class="radio"></span>
+                <span class="control__label">Набор массы</span>
+              </label>
+            </div>
+            <div class="radio__group">
+              <label class="control">
+                <input class="control__input" type="radio" name="product-group" value="i don't know">
+                <span class="radio"></span>
+                <span class="control__label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="contact__data_owner">
+            <legend class="contact__data">Контактные данные (владельца кота)</legend>
+            <label class="contact__data_email">
+              <span class="email">E-mail:*</span>
+              <input class="contact__email" type="email" placeholder="кuklachev@gmail.com" name="email" required>
+            </label>
+            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black"
+                stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-          </a>
-        </div>
-        <div class="main__services_container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="134" height="100" fill="none" viewbox="0 0 134 100">
-            <circle cx="69" cy="50" r="50" fill="#68B738" />
-            <g clip-path="url(#a)">
-              <path fill="#000"
-                d="M123.1 25.8c1.2-1.9 2.7-3.4 4.5-4.6 1-.7 1.6-.7 2.2.6.8 1.9 1.5 3.9 1 6a2.3 2.3 0 0 0 .3 2l1.6 2.4a6.3 6.3 0 0 1 1 6.2c-.4 1-.5 2-.3 3s.2 2 0 3a3.8 3.8 0 0 1-2.7 3.3c-1.3.2-2.4 1-3.2 2a1 1 0 0 1-.9.5c-1.2.2-4.2-2.5-4.2-3.7v-.6c.1-3.6 0-4-3.4-5.4-.7-.3-1.3-.7-1.8-1.2-.6-.8-1.4-.7-2.3-.4-.9.3-1.4.9-1.3 1.9.3 2.4.4 4.8.3 7.3 0 .2 0 .5.2.8 3.1 4.5 4.3 9.8 5.8 14.9 1.2 3.9 3.4 6 7.4 6.3.7 0 1.3.1 2 .3a4.2 4.2 0 0 1 3.3 3.2c.7 2 .3 2.6-1.8 2.6h-6.5c-.8 0-1.6-.3-2.3-.8-1-.9-2.1-1.6-3.4-2a7.3 7.3 0 0 1-3.4-2.6 28.6 28.6 0 0 0-4-4.5c-2.8-3-5.8-5.7-8.4-8.7-2-2-3.1-4.8-3.2-7.6 0-1-.2-1.3-1.2-1a2 2 0 0 1-1 .4c-2.8 0-4.2 1.7-5.2 4.2-.9 2-2 4-3.2 6.2-.6 1.3-1 2.7-1 4.2 0 2.4.6 3.2 2.8 4 1.4.5 2.7 1 3.4 2.4.8 1.6.6 2-1 2h-6.9a1.9 1.9 0 0 1-1.9-1l-1.8-3A6 6 0 0 1 82 63c.5-1.8.5-3.6.1-5.3a8.4 8.4 0 0 1 1.7-7c.6-.7.6-1-.4-1.2a50 50 0 0 1-11.9-4.2c-3.2-1.2-3.8-1-4.7 2.3-.8 2.8-1.6 5.6-2.2 8.5a17 17 0 0 0 1.1 9.2c.4 1.2 1.6 1 2.5 1.4 2 .6 3.7 1.4 4.5 3.5.7 1.6.6 1.8-1 1.8h-5.3c-1.5 0-3-.5-4.2-1.4-4.8-3.2-6.2-8.1-6.6-13.4-.2-3.3-2-6-4-8.4-.5-.5-.9-.7-1.5-.3a44.3 44.3 0 0 1-6.7 3c-4.8 1.7-9 4.7-12.2 8.8-1.2 1.4-2 3.2-2.2 5-.3 1.9.2 2.7 2 3.2s2.7 1.5 3 3.4c0 .8-.3 1.2-1 1.2h-8.2a1.6 1.6 0 0 1-1.3-.8 8.6 8.6 0 0 1-1.9-5.5c0-3.5.3-7 1-10.3a6.3 6.3 0 0 1 3.3-4.8c6-2.8 9-8.1 11.8-13.6.6-1.1.1-1.3-.9-1.2-2.8.3-5.4 1.4-7.7 3.2-3 2.1-5.7 4.5-8.3 7a16.7 16.7 0 0 1-10.3 5C3.1 52.5-.3 48.4 0 41.8c0-2.3 1-4.5 2.4-6.1A4.2 4.2 0 0 1 7 34.2c1.5.4 2 1.2 1.3 2.7l-1 1.7c-.4.6-.8 1.2-1 2-1 3 .4 5 3.5 5.4 3.3.3 6-1.1 8.5-3.1a45 45 0 0 0 8-8.3 20.8 20.8 0 0 1 14.4-8.1c2.3-.3 4.3-1.3 6.5-2 4.1-1.2 8.4-1.8 12.7-1.7 2 0 4-.3 5.8-1.1 5-2 10-2 15.1-1 4 .8 8 1.8 12 2.8 2.2.4 4.6.3 7-.2 4.3-1.2 8.8-1.8 13.3-2 3-.2 6 .4 8.6 1.7 2 .9 2 .9 1.5 2.8Z" />
-            </g>
-            <defs>
-              <clippath>
-                <path fill="#fff" d="M0 20h134v56H0z" />
-              </clippath>
-            </defs>
-          </svg>
-          <h3 class="main__service--header">набор массы</h3>
-          <p class="main__service--text text--content">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-            Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="main__services_catalog-section" href="#"><span class="main__link--text">каталог pro</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="12" fill="none">
-              <path stroke="#000" stroke-width="2" d="M0 6h18" />
-              <path fill="#000" d="m24 6-6.75 5.196V.804L24 6Z" />
+            <label class="contact__data_email">
+              <span class="number">Телефон:*</span>
+              <input class="contact__number" type="number" placeholder="8 (960) 900-60-90" name="number" required>
+            </label>
+            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-          </a>
-        </div>
-      </section>
-      <section class="main__services--how-it-works">
-        <h2 class="main__header">Как это работает</h2>
-        <div class="main__services_container-advantages">
-          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewbox="0 0 80 80">
-            <path fill="#68B738" d="M0 0h80v80H0z" />
-            <g clip-path="url(#a)">
-              <path fill="#fff"
-                d="M52.8 26.8a1 1 0 0 0-1-.8C47 26 35 27 30.2 34.4c-2.6 3.9-2.8 8.9-.7 15-.7 2-1 3.4-1 3.4 0 .5.3 1 .8 1.2h.2a1 1 0 0 0 .9-.8S32.7 42.8 41 36.8c.5-.3.6-.9.3-1.4a.9.9 0 0 0-1.3-.2 30 30 0 0 0-9.5 11.6c-1.2-4.6-.9-8.4 1-11.3 3.8-5.7 12.6-7.1 18-7.4A20 20 0 0 0 47.2 39c0 3.1-.9 5.5-2.5 7.1-2.6 2.6-6.9 2.9-10 2.6-.5 0-1 .4-1 1 0 .5.4 1 .9 1l2 .1c3.1 0 6.8-.7 9.4-3.2 2-2 3-4.9 3-8.6 0-9.1 3.3-11 3.3-11.1.4-.2.6-.7.5-1.1Z" />
-            </g>
-            <defs>
-              <clippath>
-                <path fill="#fff" d="M25 24h30v32H25z" />
-              </clippath>
-            </defs>
-          </svg>
-          <img class="img__one" src="../source/images/1@1x.png" width="112" height="280" alt="Цифра один.">
-          <p class="main__text_how-it-works text--content">Функциональное питание содержит только полезные питательные
-            вещества.</p>
-        </div>
-        <div class="main__services_container-advantages">
-          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewbox="0 0 80 80">
-            <path fill="#68B738" d="M0 0h80v80H0z" />
-            <path fill="#fff"
-              d="M37.9 26c-1.7 0-3 1.4-3 3 0 1.8 1.3 3.2 3 3.2 1.6 0 2.9-1.4 2.9-3.1 0-1.7-1.3-3.1-3-3.1Zm0 1.2c1 0 1.7.8 1.7 1.9 0 1-.8 1.9-1.7 1.9-1 0-1.7-.9-1.7-2 0-1 .7-1.8 1.7-1.8ZM27 50.7c0 1.2.4 2.2 1.4 3 1 .9 2.1.8 2.1.8h19c.8 0 1.9-.4 2.7-1.4.8-1 .8-2.4.8-2.4V33.5c0-.4-.1-.6-.8-.6-.6 0-.6.3-.6.6v17.2c0 .3-.1 1-.8 1.7-.7.6-1.4.6-1.4.6h-19c-.4-.1-1-.3-1.5-1s-.4-1.6-.4-1.6V33.2c0-.5-.3-.7-.8-.7-.4 0-.7.2-.7.6v17.6Zm16.3-16.3c-1 .3-2.2.4-4.2 2.4a5.8 5.8 0 0 1-8.7-.1c-.3-.4-.9-.1-1 .1-.2.2-.2.7 0 1a7 7 0 0 0 4.8 2.3c2.2.2 4.4-.8 5.9-2.3 1.4-1.4 2.1-1.7 3.2-1.9 2.7-.4 4.2.6 5.1 1.3 1 1 1.3.8 1.5.4.6-.7-.2-1.2-1-1.9a7.2 7.2 0 0 0-5.6-1.2Zm-9 7.2c-1.2 0-2.1 1-2.1 2.3 0 1.2.9 2.2 2 2.2 1.2 0 2.1-1 2.1-2.2 0-1.3-.9-2.3-2-2.3Zm11.7.8c-1.5 0-2.8 1.3-2.8 3 0 1.6 1.3 3 2.8 3 1.6 0 2.8-1.4 2.8-3 0-1.7-1.2-3-2.8-3Zm0 1.4c.8 0 1.5.7 1.5 1.6 0 .8-.7 1.5-1.5 1.5s-1.4-.7-1.4-1.5c0-.9.6-1.6 1.4-1.6Z" />
-          </svg>
-          <img class="img__two" src="../source/images/2@2x.png" width="134" height="280" alt="Цифра два.">
-          <p class="main__text_how-it-works text--content">Выпускается в виде порошка, который нужно лишь залить
-            кипятком
-            и готово.</p>
-        </div>
-        <div class="main__services_container-advantages">
-          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewbox="0 0 80 80">
-            <path fill="#68B738" d="M0 0h80v80H0z" />
-            <path fill="#fff" fill-rule="evenodd"
-              d="M46.6 25c.4 0 .8 0 1.1.3 1 .9 2.1 2.9 3 6 1 3 1.8 7.2 1.8 12.7 0 .6-.4 1-1 1H48v9a1 1 0 1 1-2 0V26c0-.4.2-.8.6-1ZM48 43h2.5A39.6 39.6 0 0 0 48 29.5V43ZM34 25c.6 0 1 .4 1 1v28a1 1 0 1 1-2 0V26c0-.6.4-1 1-1Z"
-              clip-rule="evenodd" />
-            <path fill="#fff" fill-rule="evenodd"
-              d="M29.5 25c.6 0 1 .4 1 1v5.5c0 .6.2 1.3.7 2 .5.5 1.3 1 2.8 1a1 1 0 1 1 0 2c-2 0-3.4-.7-4.3-1.8a5 5 0 0 1-1.2-3.2V26c0-.6.4-1 1-1Z"
-              clip-rule="evenodd" />
-            <path fill="#fff" fill-rule="evenodd"
-              d="M38.5 25a1 1 0 0 0-1 1v5.5a3 3 0 0 1-.7 2c-.5.5-1.3 1-2.8 1a1 1 0 0 0 0 2c2 0 3.4-.7 4.3-1.8a5 5 0 0 0 1.2-3.2V26c0-.6-.4-1-1-1Z"
-              clip-rule="evenodd" />
-          </svg>
-          <img class="img__three" src="../source/images/3@2x.png" width="134" height="280" alt="Цифра три.">
-          <p class="main__text_how-it-works text--content">Замените один-два приема обычной еды на наше функциональное
-            питание.</p>
-        </div>
-        <div class="main__services_container-advantages">
-          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewbox="0 0 80 80">
-            <path fill="#68B738" d="M0 0h80v80H0z" />
-            <path fill="#fff"
-              d="M32.5 25c-1 0-1 1.6 0 1.6h6.7v1.6c-6.8.4-12.2 6.2-12.2 13.3 0 4 1.7 7.6 4.5 10 .5.5.5 1.2.1 1.7l-1.5 1.5c-.8.7.3 1.8 1 1l2-2c.4-.3.9-.4 1.3-.2a12.7 12.7 0 0 0 11 0c.5-.2 1 0 1.4.3l2 2c.6.6 1.6-.4 1-1l-1.5-1.5c-.4-.5-.4-1.2.1-1.7A13.5 13.5 0 0 0 53 41.5c0-7.1-5.4-12.9-12.2-13.3v-1.6h6.6c1 0 1-1.6 0-1.6H32.5Zm-4 16.5c0-6.6 5.1-11.8 11.5-11.8s11.6 5.2 11.6 11.8c0 6.5-5.2 11.8-11.6 11.8-6.4 0-11.6-5.3-11.6-11.8Zm10.7-8.1c0-1.1 1.7-1.1 1.7 0V42a.8.8 0 0 1-.9.9.8.8 0 0 1-.8-.8v-8.7Zm-5 2.6a1.2 1.2 0 0 0 1.2-1.2 1.1 1.1 0 0 0-1.2-1.1 1.2 1.2 0 0 0-1 1.1 1.1 1.1 0 0 0 1 1.2Zm11.6 0a1.2 1.2 0 0 0 1.1-1.2 1.1 1.1 0 0 0-1.1-1.1 1.2 1.2 0 0 0-1 1.1 1.1 1.1 0 0 0 1 1.2ZM35.4 48.6c0 1.5-2.3 1.5-2.3 0s2.3-1.5 2.3 0ZM40 52a1.2 1.2 0 0 0 1.2-.7 1.1 1.1 0 0 0-.7-1.5 1.2 1.2 0 0 0-1.2.3 1.1 1.1 0 0 0 .7 2Zm-8-10.4a1.1 1.1 0 0 1-.8 1.2 1.2 1.2 0 0 1-1.5-.7A1.1 1.1 0 0 1 30 41a1.2 1.2 0 0 1 2 .7Zm17.2 1.2a1.2 1.2 0 0 0 1.2-.7 1.1 1.1 0 0 0-.7-1.5 1.2 1.2 0 0 0-1.2.3 1.1 1.1 0 0 0 .7 1.9ZM47 48.6c0 1.5-2.3 1.5-2.3 0s2.3-1.5 2.3 0Z" />
-          </svg>
-          <img class="img__four" src="../source/images/4@2x.png" width="136" height="280" alt="Цифра четыре.">
-          <p class="main__text_how-it-works text--content">Уже через месяц наслаждайтесь изменениями к лучшему вашего
-            питомца!</p>
-        </div>
-      </section>
-      <section class="main__example">
-        <h2 class="main__header">Живой пример</h2>
-        <p class="main__text text--content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
-          по-прежнему спит по 16 часов в день.</p>
-        <div class="example__info">
-          <p class="main__example_info-subtitle">5 КГ</p>
-          <p class="main__example_info-text">снижение веса</p>
-        </div>
-        <div class="example__info">
-          <p class="main__example_info-subtitle">60 ДНЕЙ</p>
-          <p class="main__example_info-text">затрачено времени</p>
-        </div>
-        <div class="main__text_food">
-          <p class="main__text_food-costs">Затраты на питание:
-            <span class="main__text_food-costs">15 000 РУБ.</span>
-          </p>
-        </div>
-        <div class="main__img_scrolling">
-          <img src="/source/images/state-before@1x.jpg" width="560" height="512" alt="Толстый кот трех шерстный.">
-          <img src="/source/images/state-after@1x.jpg" width="560" height="512" alt="Худой кот трех шерстный.">
-          <button class="main__button" type="button"></button>
-        </div>
+          </fieldset>
+          <fieldset class="comment">
+            <legend class="comment__subtitle"><span class="comment__subtitle_text">Комментарий</span></legend>
+            <label><span class="visually-hidden">Ввести текст</span>
+              <textarea name="textarea" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+            </label>
+          </fieldset>
+          <fieldset class="checkbox__container">
+            <legend class="checkbox__container_additionally">Дополнительно</legend>
+            <div class="checkbox__group">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="product-group" checked>
+                <span class="checkbox"></span>
+                <span class="control__label">сахарозаменитель</span>
+              </label>
+            </div>
+            <div class="checkbox__group">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="product-group">
+                <span class="checkbox"></span>
+                <span class="control__label">питьевая вода</span>
+              </label>
+            </div>
+            <div class="checkbox__group">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="product-group">
+                <span class="checkbox"></span>
+                <span class="control__label">молоко</span>
+              </label>
+            </div>
+            <div class="checkbox__group">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="product-group">
+                <span class="checkbox"></span>
+                <span class="control__label">витамины</span>
+              </label>
+            </div>
+          </fieldset>
+          <button class="button button--application" type="button">отправить заявку</button>
+          <span class="required__fields">* — Обязательные поля</span>
+        </form>
       </section>
       <section class="address">
         <h3 class="address__cooperation">приглашаем к сотрудничеству дилеров!</h3>
@@ -213,7 +175,7 @@
             <pattern patterncontentunits="objectBoundingBox" width="1" height="1">
               <use xlink:href="#b" transform="scale(.00885 .00943)" />
             </pattern>
-            <image width="113" height="106"
+            <image id="b" width="113" height="106"
               xlink:href="data:image/png;base64,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" />
           </defs>
         </svg>
