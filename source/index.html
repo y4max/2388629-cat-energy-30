@@ -19,8 +19,12 @@
   <header class="header">
     <div class="header__container">
       <nav class="header__navigation">
-        <img src="../source/images/logo-mobile.svg" width="33" height="38" alt="Кот в плаще.">
-        <img src="../source/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/source/images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/source/images/logo-pic.svg" width="60" height="50">
+          <img src="/source/images/logo-mobile.svg" width="33" height="38" alt="Кот в плаще.">
+        </picture>
+        <img class="header__logo-text" src="/source/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
             <a class="header__navigation-link header__navigation-link--active" href="index.html">главная</a>
@@ -46,8 +50,11 @@
         <h1 class="hero__header heading-title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <a class="button button--primary" href="form.html">подобрать программу</a>
-        <img class="hero__product" src="../source/images/index-can@2x.jpg" width="280" height="270"
-          alt="Упаковка корма с курицей.">
+        <picture>
+          <source type="image/jpeg" media="(min-width: 1440px)" srcset="/source/images/index-can@1x.jpg 1x, /source/images/index-can@2x.jpg 2x" width="552" height="499">
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="/source/images/index-can-tablet@1x.jpg, /source/images/index-can-tablet@2x.jpg 2x" width="709" height="609">
+          <img class="hero__product" src="/source/images/index-can-mobile@1x.jpg" srcset="/source/images/index-can-mobile@2x.jpg 2x" width="280" height="270" alt="Упаковка корма с курицей.">
+        </picture>
       </div>
     </section>
     <section class="nutrition">
@@ -62,7 +69,8 @@
             <h3 class="nutrition__item-header">похудение</h3>
             <p class="nutrition__item-text">Ваш кот весит больше собаки и почти утратил способность лазить
               по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="nutrition__link-link" href="#"><span class="main__link-text">каталог slim</span>
+            <a class="nutrition__link-link" href="#">
+              <span class="main__link-text">каталог slim</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="12" fill="none">
                 <path stroke="#000" stroke-width="2" d="M0 6h18" />
                 <path fill="#000" d="m24 6-6.75 5.196V.804L24 6Z" />
@@ -78,7 +86,8 @@
             <p class="nutrition__item-text">Заработать авторитет среди дворовых котов и даже собак?
               Серия
               Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="nutrition__item-link" href="#"><span class="main__link-text">каталог pro</span>
+            <a class="nutrition__item-link" href="#">
+              <span class="main__link-text">каталог pro</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="12" fill="none">
                 <path stroke="#000" stroke-width="2" d="M0 6h18" />
                 <path fill="#000" d="m24 6-6.75 5.196V.804L24 6Z" />
@@ -132,10 +141,12 @@
           <span class="example__text-food-costs">15 000 РУБ.</span>
         </div>
         <div class="example__img-scrolling">
-          <img class="example__images-cats" src="/source/images/state-before@1x.jpg" width="280" height="256"
-            alt="Толстый кот трех шерстный.">
-          <img class="example__images-cats" src="/source/images/state-after@1x.jpg" width="280" height="256"
-            alt="Худой кот трех шерстный.">
+          <picture>
+          <source type="image/jpeg" media="(min-width: 1440px)" srcset="/source/images/state-before@1x@1x.jpg 1x, /source/images/state-before@1x@2x.jpg 2x" width="560" height="512">
+          <img class="example__images-cats" src="/source/images/state-before-mobile@1x@1x.jpg" srcset="/source/images/state-before-mobile@1x@2x.jpg 2x" width="280" height="256" alt="Толстый кот трех шерстный.">
+          <source type="image/jpeg" media="(min-width: 1440px)" srcset="/source/images/state-after@1x@1x.jpg 1x, /source/images/state-after@1x@2x.jpg 2x" width="560" height="512">
+          <img class="example__images-cats" src="/source/images/state-after-mobile@1x@1x.jpg" srcset="/source/images/state-after-mobile@1x@2x.jpg 2x" width="280" height="256" alt="Худой кот трех шерстный.">
+          </picture>
           <button class="example__button" type="button" aria-label="scroll"></button>
         </div>
       </div>
@@ -146,7 +157,7 @@
         <p class="contact__contact">ул. Большая Конюшенная, д. 19/8
           <span class="contact__contact city">Санкт-Петербург</span>
         </p>
-        <img class="contact__map" width="320" height="362" src="../source/images/map-mobile@2x.jpg" alt="Карта">
+        <img class="contact__map" width="320" height="362" src="" alt="Карта">
       </div>
     </section>
   </main>

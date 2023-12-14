@@ -19,8 +19,12 @@
   <header class="header">
     <div class="header__container">
       <nav class="header__navigation">
-        <img src="../source/images/logo-mobile.svg" width="33" height="38" alt="Кот в плаще.">
-        <img src="../source/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/source/images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/source/images/logo-pic.svg" width="60" height="50">
+          <img src="/source/images/logo-mobile.svg" width="33" height="38" alt="Кот в плаще.">
+        </picture>
+        <img src="source/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
             <a class="header__navigation-link" href="index.html">главная</a>
@@ -151,7 +155,7 @@
         <p class="contact__contact">ул. Большая Конюшенная, д. 19/8
           <span class="contact__contact city">Санкт-Петербург</span>
         </p>
-        <img class="contact__map" width="320" height="362" src="../source/images/map-mobile@2x.jpg" alt="Карта">
+        <img class="contact__map" width="320" height="362" src="source/images/map-mobile@2x.jpg" alt="Карта">
       </div>
     </section>
   </main>
