@@ -29,13 +29,13 @@
         <img class="header__logo-text" src="/source/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="index.html">главная</a>
+            <a class="header__navigation-link" href="index.html">Главная</a>
           </li>
           <li class="header__navigation-item">
             <a class="header__navigation-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link header__navigation-link--active" href="form.html">подбор программы</a>
+            <a class="header__navigation-link header__navigation-link--active" href="form.html">Подбор программы</a>
           </li>
         </ul>
         <button class="header__button-menu" type="button" aria-label="Открыть меню">
@@ -68,32 +68,32 @@
           </div>
           <div class="program__radio-container">
             <div class="program__radio-group">
-              <label class="control">
-                <input class="control__input" type="radio" name="product-group" value="weight-loss" checked>
-                <span class="radio"></span>
-                <span class="control__label">похудение</span>
+              <label class="program__control">
+                <input class="program__control-input" type="radio" name="product-group" value="weight-loss" checked>
+                <span class="program__radio"></span>
+                <span class="program__control-label">похудение</span>
               </label>
             </div>
             <div class="program__radio-group">
-              <label class="control">
-                <input class="control__input" type="radio" name="product-group" value="weight-gain">
-                <span class="radio"></span>
-                <span class="control__label">Набор массы</span>
+              <label class="program__control">
+                <input class="program__control-input" type="radio" name="product-group" value="weight-gain">
+                <span class="program__radio"></span>
+                <span class="program__control-label">Набор массы</span>
               </label>
             </div>
             <div class="program__radio-group">
-              <label class="control">
-                <input class="control__input" type="radio" name="product-group" value="i-don`t-know">
-                <span class="radio"></span>
-                <span class="control__label">Не знаю (Нужен ваш совет)</span>
+              <label class="program__control">
+                <input class="program__control-input" type="radio" name="product-group" value="i-don`t-know">
+                <span class="program__radio"></span>
+                <span class="program__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </div>
           </div>
           <div class="program__contact data-owner">
             <h2 class="program__contact-data">Контактные данные (владельца кота)</h2>
             <label class="program__contact-data-email">
-              <span class="email">E-mail:*</span>
-              <input class="program__contact-email" type="email" placeholder="кuklachev@gmail.com" name="email"
+              <span class="program__email">E-mail:*</span>
+              <input class="program__contact-email" type="email" placeholder="KUKLACHEV@GMAIL.COM" name="email"
                 required>
             </label>
             <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,8 +101,8 @@
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             <label class="program__contact-data-number">
-              <span class="number">Телефон:*</span>
-              <input class="main__contact-number" type="number" placeholder="8 (960) 900-60-90" name="number" required>
+              <span class="program__number">Телефон:*</span>
+              <input class="program__contact-number" type="number" placeholder="8 (960) 900-60-90" name="number" required>
             </label>
             <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -111,38 +111,42 @@
             </svg>
           </div>
           <div class="program__comment">
-            <h2 class="program__comment-subtitle"><span class="program__comment-subtitle-text">Комментарий</span></h2>
-            <label for="enter-text"><span class="visually-hidden">Ввести текст</span></label>
-            <textarea name="textarea" cols="30" rows="10" id="enter-text">Расскажите обо всех повадках кота</textarea>
+            <h2 class="program__comment-subtitle">
+              <span class="program__comment-subtitle-text">Комментарий</span>
+            </h2>
+            <label for="enter-text">
+              <span class="visually-hidden">Ввести текст</span>
+            </label>
+            <textarea class="program__textarea" name="textarea" cols="30" rows="10" id="enter-text">Расскажите обо всех повадках кота</textarea>
           </div>
           <div class="program__checkbox-container">
             <h2 class="program__checkbox-container-additionally">Дополнительно</h2>
             <div class="program__checkbox-group">
-              <label class="control">
-                <input class="control__input" type="checkbox" name="sweetener" checked>
-                <span class="checkbox"></span>
-                <span class="control__label">сахарозаменитель</span>
+              <label class="program__control">
+                <input class="program__control-input" type="checkbox" name="sweetener" checked>
+                <span class="program__checkbox"></span>
+                <span class="program__control-label">сахарозаменитель</span>
               </label>
             </div>
             <div class="program__checkbox-group">
-              <label class="control">
-                <input class="control__input" type="checkbox" name="water">
-                <span class="checkbox"></span>
-                <span class="control__label">питьевая вода</span>
+              <label class="program__control">
+                <input class="program__control-input" type="checkbox" name="water">
+                <span class="program__checkbox"></span>
+                <span class="program__control-label">питьевая вода</span>
               </label>
             </div>
             <div class="program__checkbox-group">
-              <label class="control">
-                <input class="control__input" type="checkbox" name="milk">
-                <span class="checkbox"></span>
-                <span class="control__label">молоко</span>
+              <label class="program__control">
+                <input class="program__control-input" type="checkbox" name="milk">
+                <span class="program__checkbox"></span>
+                <span class="program__control-label">молоко</span>
               </label>
             </div>
             <div class="program__checkbox-group">
-              <label class="control">
-                <input class="control__input" type="checkbox" name="vitamins">
-                <span class="checkbox"></span>
-                <span class="control__label">витамины</span>
+              <label class="program__control">
+                <input class="program__control-input" type="checkbox" name="vitamins">
+                <span class="program__checkbox"></span>
+                <span class="program__control-label">витамины</span>
               </label>
             </div>
           </div>
@@ -201,7 +205,7 @@
         </li>
       </ul>
       <div class="footer__logo html-academy">
-        <a class="logo" href="https://htmlacademy.ru/">
+        <a class="footer__logo-link" href="https://htmlacademy.ru/">
           <span class="footer__logo-text">HTML Academy</span>
           <svg width="27" height="35" viewbox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

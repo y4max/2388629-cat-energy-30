@@ -1,0 +1,42 @@
+.products__header-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-text;
+}
+
+.products__list {
+  list-style-type: none;
+}
+
+.products__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-grey-2;
+  text-transform: uppercase;
+}
+
+.products__text {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
+
+.products__title-cards {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-grey-2;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.products__text-cards {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+  align-items: center;
+}

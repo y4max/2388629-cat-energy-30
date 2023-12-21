@@ -1,0 +1,18 @@
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-mobile;
+  text-transform: uppercase;
+  background-color: $bg-color-basic;
+}
+
+.button--primary {
+  text-decoration: none;
+}
+
+.button--additional-cards {
+  color: $special-dark-grey;
+  background-color: #F2F2F2;
+  text-decoration: none;
+}

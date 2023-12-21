@@ -1,0 +1,81 @@
+.program__header-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-text;
+}
+
+.program__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text;
+  text-transform: uppercase;
+}
+
+.program__name, .program__weight, .program__age {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+}
+
+.program__control-label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+}
+
+.program__contact-data {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-text;
+}
+
+.program__email, .program__number {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+}
+
+.program__comment-subtitle-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-text;
+}
+
+.program__textarea {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+}
+
+.program__checkbox-container-additionally {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-text;
+}
+
+.program__control-label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
+.program__required-fields {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-text;
+}
