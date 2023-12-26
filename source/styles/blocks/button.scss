@@ -5,14 +5,13 @@
   color: $color-mobile;
   text-transform: uppercase;
   background-color: $bg-color-basic;
+  width: 100%;
 }
 
 .button--primary {
   display: block;
   text-decoration: none;
   padding: 14px 44px;
-  width: 280px;
-  height: 40px;
   margin-top: 3px;
 }
 

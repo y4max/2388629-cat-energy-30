@@ -17,7 +17,7 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="header__container">
+    <div class="container">
       <nav class="header__navigation">
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/images/logo-desktop.svg" width="70"
@@ -47,7 +47,7 @@
   </header>
   <main class="main">
     <section class="hero">
-      <div class="hero__container">
+      <div class="container">
         <h1 class="hero__header heading-title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <picture>
@@ -63,10 +63,9 @@
     </section>
     <section class="nutrition">
       <h2 class="visually-hidden">Программы питания</h2>
-      <div class="nutrition__container">
+      <div class="container">
         <ul class="nutrition__list">
-          <div class="nutrition__container-svg-slim">
-          <li class="nutrition__item">
+          <li class="nutrition__item nutrition__item--slim">
             <h3 class="nutrition__item-header">похудение</h3>
             <p class="nutrition__item-text">Ваш кот весит больше собаки и почти утратил способность лазить
               по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -78,9 +77,7 @@
               </svg>
             </a>
           </li>
-        </div>
-        <div class="nutrition__container-svg-pro">
-          <li class="nutrition__item">
+          <li class="nutrition__item nutrition__item--pro">
             <h3 class="nutrition__item-header">набор массы</h3>
             <p class="nutrition__item-text">Заработать авторитет среди дворовых котов и даже собак?
               Серия
@@ -93,12 +90,11 @@
               </svg>
             </a>
           </li>
-        </div>
         </ul>
       </div>
     </section>
     <section class="how-it-works">
-      <div class="how-it-works__container">
+      <div class="container">
         <h2 class="how-it-works__header title">Как это работает</h2>
         <ul class="how-it-works__services how-it-works__advantages-list">
           <li class="how-it-works__services how-it-works__advantages-item">
@@ -121,7 +117,7 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__container">
+      <div class="container">
         <h2 class="example__header title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
@@ -163,7 +159,7 @@
       </div>
     </section>
     <section class="contact">
-      <div class="contact__container">
+      <div class="container">
         <h3 class="contact__cooperation">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="contact__address">ул. Большая Конюшенная, д. 19/8
           <span class="contact__address city">Санкт-Петербург</span>
@@ -173,10 +169,16 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__container">
+    <div class="container">
       <div class="footer__cat-energy">
         <a class="footer__logo cat-energy" href="index.html">
-          <img src="../images/logo-text.svg" width="128" height="24" alt="Кэт Энерджи.">
+          <picture>
+            <source type="image/svg" media="(min-width: 1440px)"
+              srcset="/images 1x, /images/state-after@1x@2x.jpg 2x" width="560" height="512">
+            <source type="image/svg" media="(min-width: 768px)"
+              srcset="/images/state-after@1x@1x.jpg 1x, /images/state-after@1x@2x.jpg 2x" width="560" height="512">
+            <img src="../images/logo-text.svg" width="128" height="24" alt="Кэт Энерджи.">
+          </picture>
         </a>
       </div>
       <ul class="footer__social-item">

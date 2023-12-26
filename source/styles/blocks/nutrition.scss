@@ -1,6 +1,4 @@
 .nutrition__item {
-  width: 280px;
-  height: 266px;
   background-color: #f2f2f2;
 }
 
@@ -43,20 +41,18 @@
   text-decoration: none;
 }
 
-.nutrition__container-svg-slim {
+.nutrition__item--slim::after {
+  content: "";
   background-image: url("../../images/cat-slim.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 36px;
-  height: 50px;
 }
 
-.nutrition__container-svg-pro {
+.nutrition__item--pro::after {
+  content: "";
   background-image: url("../../images/cat-pro.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 36px;
-  height: 50px;
 }
