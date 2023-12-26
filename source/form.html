@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="cat-152@1x.ico">
-  <link rel="icon" type="image/png" href="/source/cat-152@1x.png">
+  <link rel="icon" type="image/png" href="/cat-152@1x.png">
   <link rel="icon" href="cat-16@1x.ico">
-  <link rel="icon" type="image/png" href="/source/cat-16@1x.png">
+  <link rel="icon" type="image/png" href="/cat-16@1x.png">
   <link rel="icon" href="cat-32@1x.ico">
-  <link rel="icon" type="image/png" href="/source/cat-32@1x.png">
+  <link rel="icon" type="image/png" href="/cat-32@1x.png">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -20,13 +20,13 @@
     <div class="header__container">
       <nav class="header__navigation">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/source/images/logo-desktop.svg" width="70"
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/images/logo-desktop.svg" width="70"
             height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/source/images/logo-pic.svg" width="60"
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/images/logo-pic.svg" width="60"
             height="50">
-          <img src="/source/images/logo-mobile.svg" width="33" height="38" alt="Кот в плаще.">
+          <img class="header__logo" src="/images/logo-mobile.svg" width="33" height="38" alt="Кот в плаще.">
         </picture>
-        <img class="header__logo-text" src="/source/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
+        <img class="header__logo-text" src="/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
             <a class="header__navigation-link" href="index.html">Главная</a>
@@ -39,9 +39,9 @@
           </li>
         </ul>
         <button class="header__button-menu" type="button" aria-label="Открыть меню">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <span class="header__span-menu" aria-hidden="true"></span>
+          <span class="header__span-menu" aria-hidden="true"></span>
+          <span class="header__span-menu" aria-hidden="true"></span>
         </button>
       </nav>
     </div>
@@ -55,7 +55,7 @@
           <div class="program__cat-data">
             <label class="program__cat-data-name">
               <span class="program__name">Имя:*</span>
-              <input class="program__cat-data-placeholder" type="text" name="name" placeholder="БАРСИК">
+              <input class="program__cat-data-placeholder" type="text" name="name" placeholder="Барсик">
             </label>
             <label class="program__cat-data-weight">
               <span class="program__weight">Вес (кг):*</span>
@@ -93,7 +93,7 @@
             <h2 class="program__contact-data">Контактные данные (владельца кота)</h2>
             <label class="program__contact-data-email">
               <span class="program__email">E-mail:*</span>
-              <input class="program__contact-email" type="email" placeholder="KUKLACHEV@GMAIL.COM" name="email"
+              <input class="program__contact-email" type="email" placeholder="кuklachev@gmail.com" name="email"
                 required>
             </label>
             <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,10 +158,10 @@
     <section class="contact">
       <div class="contact__container">
         <h3 class="contact__cooperation">приглашаем к сотрудничеству дилеров!</h3>
-        <p class="contact__contact">ул. Большая Конюшенная, д. 19/8
-          <span class="contact__contact city">Санкт-Петербург</span>
+        <p class="contact__address">ул. Большая Конюшенная, д. 19/8
+          <span class="contact__address city">Санкт-Петербург</span>
         </p>
-        <img class="contact__map" width="320" height="362" src="source/images/map-mobile@2x.jpg" alt="Карта">
+        <img class="contact__map" width="320" height="362" src="/images/map-mobile@2x.jpg" alt="Карта">
       </div>
     </section>
   </main>
@@ -169,7 +169,7 @@
     <div class="footer__container">
       <div class="footer__cat-energy">
         <a class="footer__logo cat-energy" href="index.html">
-          <img src="../source/images/logo-text.svg" width="128" height="24" alt="Кэт Энерджи.">
+          <img src="../images/logo-text.svg" width="128" height="24" alt="Кэт Энерджи.">
         </a>
       </div>
       <ul class="footer__social-item">

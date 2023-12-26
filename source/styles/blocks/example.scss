@@ -1,33 +1,33 @@
 .example__header {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 36px;
   line-height: 40px;
   color: $color-text;
 }
 
 .example__text {
-  font-family: "Lato", sans-serif;
+  font-family: $lato-font;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
 }
 
 .example__info-subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 24px;
   line-height: 24px;
   color: $color-text;
 }
 
 .example__info-text {
-  font-family: "Lato", sans-serif;
+  font-family: $lato-font;
   font-size: 12px;
   line-height: 12px;
   color: $special-dark-grey;
 }
 
 .example__text-food-costs {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 14px;
   line-height: 20px;
   color: $color-text;

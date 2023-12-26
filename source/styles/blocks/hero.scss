@@ -1,14 +1,35 @@
+.hero {
+  width: 320px;
+}
+
+.hero__container {
+  background-image: url("../../images/cat-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 302px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero__header {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 36px;
   line-height: 36px;
   color: $color-mobile;
+  margin: 0 auto;
+  padding-top: 27px;
+  padding-bottom: 25px;
 }
 
 .hero__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 14px;
   line-height: 14px;
   color: $color-mobile;
   text-transform: uppercase;
+  margin: 0 auto;
+  padding-bottom: 29px;
 }

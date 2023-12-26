@@ -1,5 +1,5 @@
 .how-it-works__header {
-  font-family: "Osawald", sans-serif;
+  font-family: $oswald-font;
   font-size: 36px;
   line-height: 40px;
   color: $color-text;
@@ -10,7 +10,7 @@
 }
 
 .how-it-works__text {
-  font-family: "Lato", sans-serif;
+  font-family: $lato-font;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;

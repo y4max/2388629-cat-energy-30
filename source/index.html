@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="cat-152@1x.ico">
-  <link rel="icon" type="image/png" href="/source/cat-152@1x.png">
+  <link rel="icon" type="image/png" href="/cat-152@1x.png">
   <link rel="icon" href="cat-16@1x.ico">
-  <link rel="icon" type="image/png" href="/source/cat-16@1x.png">
+  <link rel="icon" type="image/png" href="/cat-16@1x.png">
   <link rel="icon" href="cat-32@1x.ico">
-  <link rel="icon" type="image/png" href="/source/cat-32@1x.png">
+  <link rel="icon" type="image/png" href="/cat-32@1x.png">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -20,13 +20,12 @@
     <div class="header__container">
       <nav class="header__navigation">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/source/images/logo-desktop.svg" width="70"
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/images/logo-desktop.svg" width="70"
             height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/source/images/logo-pic.svg" width="60"
-            height="50">
-          <img src="/source/images/logo-mobile.svg" width="33" height="38" alt="Кот в плаще.">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/images/logo-pic.svg" width="60" height="50">
+          <img class="header__logo" src="/images/logo-mobile.svg" width="33" height="38" alt="Кот в плаще.">
         </picture>
-        <img class="header__logo-text" src="/source/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
+        <img class="header__logo-text" src="/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
             <a class="header__navigation-link header__navigation-link--active" href="index.html">Главная</a>
@@ -39,9 +38,9 @@
           </li>
         </ul>
         <button class="header__button-menu" type="button" aria-label="Открыть меню">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <span class="header__span-menu" aria-hidden="true"></span>
+          <span class="header__span-menu" aria-hidden="true"></span>
+          <span class="header__span-menu" aria-hidden="true"></span>
         </button>
       </nav>
     </div>
@@ -51,22 +50,22 @@
       <div class="hero__container">
         <h1 class="hero__header heading-title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <a class="button button--primary" href="form.html">подобрать программу</a>
         <picture>
           <source type="image/jpeg" media="(min-width: 1440px)"
-            srcset="/source/images/index-can@1x.jpg 1x, /source/images/index-can@2x.jpg 2x" width="552" height="499">
+            srcset="/images/index-can@1x.png 1x, /images/index-can@2x.png 2x" width="552" height="499">
           <source type="image/jpeg" media="(min-width: 768px)"
-            srcset="/source/images/index-can-tablet@1x.jpg, /source/images/index-can-tablet@2x.jpg 2x" width="709"
-            height="609">
-          <img class="hero__product" src="/source/images/index-can-mobile@1x.jpg"
-            srcset="/source/images/index-can-mobile@2x.jpg 2x" width="280" height="270" alt="Упаковка корма с курицей.">
+            srcset="/images/index-can-tablet@1x.png, /images/index-can-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero__product" src="/images/index-can-mobile@1x.png" srcset="/images/index-can-mobile@2x.png 2x"
+            width="280" height="270" alt="Упаковка корма с курицей.">
         </picture>
+        <a class="button button--primary" href="form.html">подобрать программу</a>
       </div>
     </section>
     <section class="nutrition">
+      <h2 class="visually-hidden">Программы питания</h2>
       <div class="nutrition__container">
-        <h2 class="visually-hidden">Программы питания</h2>
         <ul class="nutrition__list">
+          <div class="nutrition__container-svg-slim">
           <li class="nutrition__item">
             <h3 class="nutrition__item-header">похудение</h3>
             <p class="nutrition__item-text">Ваш кот весит больше собаки и почти утратил способность лазить
@@ -79,6 +78,8 @@
               </svg>
             </a>
           </li>
+        </div>
+        <div class="nutrition__container-svg-pro">
           <li class="nutrition__item">
             <h3 class="nutrition__item-header">набор массы</h3>
             <p class="nutrition__item-text">Заработать авторитет среди дворовых котов и даже собак?
@@ -92,6 +93,7 @@
               </svg>
             </a>
           </li>
+        </div>
         </ul>
       </div>
     </section>
@@ -141,25 +143,20 @@
         <div class="example__img-scrolling">
           <picture>
             <source type="image/jpeg" media="(min-width: 1440px)"
-              srcset="/source/images/state-before@1x@1x.jpg 1x, /source/images/state-before@1x@2x.jpg 2x" width="560"
-              height="512">
+              srcset="/images/state-before@1x@1x.jpg 1x, /images/state-before@1x@2x.jpg 2x" width="560" height="512">
             <source type="image/jpeg" media="(min-width: 768px)"
-              srcset="/source/images/state-before@1x@1x.jpg 1x, /source/images/state-before@1x@2x.jpg 2x" width="560"
-              height="512">
-            <img class="example__images-cats" src="/source/images/state-before-mobile@1x@1x.jpg"
-              srcset="/source/images/state-before-mobile@1x@2x.jpg 2x" width="280" height="256"
+              srcset="/images/state-before@1x@1x.jpg 1x, /images/state-before@1x@2x.jpg 2x" width="560" height="512">
+            <img class="example__images-cats" src="/images/state-before-mobile@1x@1x.jpg"
+              srcset="/images/state-before-mobile@1x@2x.jpg 2x" width="280" height="256"
               alt="Толстый кот трех шерстный.">
           </picture>
           <picture>
             <source type="image/jpeg" media="(min-width: 1440px)"
-              srcset="/source/images/state-after@1x@1x.jpg 1x, /source/images/state-after@1x@2x.jpg 2x" width="560"
-              height="512">
+              srcset="/images/state-after@1x@1x.jpg 1x, /images/state-after@1x@2x.jpg 2x" width="560" height="512">
             <source type="image/jpeg" media="(min-width: 768px)"
-              srcset="/source/images/state-after@1x@1x.jpg 1x, /source/images/state-after@1x@2x.jpg 2x" width="560"
-              height="512">
-            <img class="example__images-cats" src="/source/images/state-after-mobile@1x@1x.jpg"
-              srcset="/source/images/state-after-mobile@1x@2x.jpg 2x" width="280" height="256"
-              alt="Худой кот трех шерстный.">
+              srcset="/images/state-after@1x@1x.jpg 1x, /images/state-after@1x@2x.jpg 2x" width="560" height="512">
+            <img class="example__images-cats" src="/images/state-after-mobile@1x@1x.jpg"
+              srcset="/images/state-after-mobile@1x@2x.jpg 2x" width="280" height="256" alt="Худой кот трех шерстный.">
           </picture>
           <button class="example__button" type="button" aria-label="scroll"></button>
         </div>
@@ -168,10 +165,10 @@
     <section class="contact">
       <div class="contact__container">
         <h3 class="contact__cooperation">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="contact__contact">ул. Большая Конюшенная, д. 19/8
-          <span class="contact__contact city">Санкт-Петербург</span>
+        <p class="contact__address">ул. Большая Конюшенная, д. 19/8
+          <span class="contact__address city">Санкт-Петербург</span>
         </p>
-        <img class="contact__map" width="320" height="362" src="#" alt="Карта">
+        <img class="contact__map" width="320" height="362" src="../images/map-mobile@1x.jpg" alt="Карта">
       </div>
     </section>
   </main>
@@ -179,7 +176,7 @@
     <div class="footer__container">
       <div class="footer__cat-energy">
         <a class="footer__logo cat-energy" href="index.html">
-          <img src="../source/images/logo-text.svg" width="128" height="24" alt="Кэт Энерджи.">
+          <img src="../images/logo-text.svg" width="128" height="24" alt="Кэт Энерджи.">
         </a>
       </div>
       <ul class="footer__social-item">

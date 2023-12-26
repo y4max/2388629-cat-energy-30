@@ -1,13 +1,13 @@
 .contact__cooperation {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
 }
 
-.contact__contact {
-  font-family: "", sans-serif;
+.contact__address {
+  font-family: $lato-font;
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-grey;

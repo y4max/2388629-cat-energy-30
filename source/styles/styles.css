@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/* GLOBAL */
+/* здесь используйте глобальные переменные */
+/* здесь подключите шрифты*/
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* BLOCKS */
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738;
+}
+
+.button--primary {
+  text-decoration: none;
+}
+
+.button--additional-cards {
+  color: #444444;
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.header__navigation-list {
+  list-style-type: none;
+}
+
+.header__navigation-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero__header {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.hero__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.nutrition__item-header {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.nutrition__item-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.nutrition__link-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.nutrition__list {
+  list-style-type: none;
+}
+
+.nutrition__link {
+  text-decoration: none;
+}
+
+.how-it-works__header {
+  font-family: "Osawald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.how-it-works__services {
+  list-style-type: none;
+}
+
+.how-it-works__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__header {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__info-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.example__info-text {
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.example__text-food-costs {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.contact__cooperation {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.contact__address {
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.footer__social-item {
+  list-style-type: none;
+}
+
+.footer__logo-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.footer__logo-link {
+  text-decoration: none;
+}
+
+.program__header-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.program__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.program__name,
+.program__weight,
+.program__age {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.program__control-label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.program__contact-data {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.program__email,
+.program__number {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.program__comment-subtitle-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.program__textarea {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.program__checkbox-container-additionally {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.program__required-fields {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.products__header-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.products__list {
+  list-style-type: none;
+}
+
+.products__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.products__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.products__title-cards {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.products__text-cards {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  align-items: center;
+}
+
+.additional__products-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.additional__list {
+  list-style-type: none;
+}
+
+.additional__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional__text {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.additional__special-offer {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
