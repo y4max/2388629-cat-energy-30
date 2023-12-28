@@ -1,8 +1,16 @@
+.example {
+  background-color: $bg-color;
+}
+
 .example__header {
   font-family: $oswald-font;
   font-size: 36px;
   line-height: 40px;
   color: $color-text;
+  text-align: justify;
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 40px;
 }
 
 .example__text {
@@ -10,6 +18,20 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.example__info-container {
+  position: relative;
 }
 
 .example__info-subtitle {
@@ -17,6 +39,14 @@
   font-size: 24px;
   line-height: 24px;
   color: $color-text;
+  border: 1px solid #cdcdcd;
+  padding: 14px 21px;
+  border-radius: 3px;
+  margin-bottom: 7px;
+}
+
+.example__info-subtitle--weight {
+  padding: 14px 42px;
 }
 
 .example__info-text {
@@ -24,6 +54,18 @@
   font-size: 12px;
   line-height: 12px;
   color: $special-dark-grey;
+  margin: 0;
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $bg-color;
+  padding: 0 13px;
+}
+
+.example__container-food {
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .example__text-food-costs {
@@ -31,4 +73,5 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-text;
+  text-transform: uppercase;
 }

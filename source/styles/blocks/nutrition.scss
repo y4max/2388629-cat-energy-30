@@ -1,5 +1,7 @@
 .nutrition__item {
   background-color: #f2f2f2;
+  margin-top: 20px;
+  position: relative;
 }
 
 .nutrition__item-header {
@@ -8,6 +10,8 @@
   line-height: 37px;
   color: $color-text;
   margin: 0;
+  padding-top: 30px;
+  padding-bottom: 29px;
 }
 
 .nutrition__item-text {
@@ -16,8 +20,12 @@
   line-height: 18px;
   color: $special-dark-grey;
   border-bottom: 1px solid #d9d9d9;
-  min-width: 227px;
+  width: 227px;
   min-height: 90px;
+  margin: 0;
+  margin-left: 20px;
+  text-align: left;
+  padding-bottom: 23px;
 }
 
 .nutrition__link-text {
@@ -32,27 +40,70 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 20px;
   display: flex;
   flex-direction: column;
 }
 
+.nutrition__item--slim::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  background-color: $bg-color-basic;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid $bg-color-basic;
+}
+
+.nutrition__item--pro::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  background-color: $bg-color-basic;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid $bg-color-basic;
+}
+
 .nutrition__link {
   text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 18px;
+  padding-top: 15px;
+  gap: 15px;
 }
 
 .nutrition__item--slim::after {
   content: "";
+  display: block;
+  position: absolute;
+  top: 9%;
+  left: 10%;
   background-image: url("../../images/cat-slim.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-width: 36px;
+  min-height: 50px;
 }
 
 .nutrition__item--pro::after {
   content: "";
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 4%;
   background-image: url("../../images/cat-pro.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-width: 67px;
+  min-height: 28px;
 }

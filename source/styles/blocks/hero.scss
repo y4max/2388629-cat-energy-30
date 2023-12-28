@@ -1,8 +1,8 @@
 .hero {
-  background-image: url("../../images/cat-mobile@1x.jpg");
+  background-image: url("../../images/cat-mobile@1x.jpg"), linear-gradient(to bottom, #61a53a 302px, transparent 302px);
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 320px 302px;
+  background-position: center top, center;
+  background-size: 320px 302px, cover;
   display: flex;
   flex-direction: column;
   align-items: center;

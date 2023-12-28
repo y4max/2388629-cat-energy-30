@@ -1,5 +1,30 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__cat-energy {
+  border-bottom: 1px solid $color-border-2;
+  padding-bottom: 20px;
+}
+
 .footer__social-item {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  gap: 24px;
+  border-bottom: 1px solid $color-border-2;
+}
+
+.footer__logo {
+  padding-top: 20px;
 }
 
 .footer__logo-text {
@@ -11,4 +36,7 @@
 
 .footer__logo-link {
   text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

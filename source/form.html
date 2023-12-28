@@ -16,14 +16,13 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header header__border">
     <div class="container">
       <nav class="header__navigation">
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/images/logo-desktop.svg" width="70"
             height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/images/logo-pic.svg" width="60"
-            height="50">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/images/logo-pic.svg" width="60" height="50">
           <img class="header__logo" src="/images/logo-mobile.svg" width="33" height="38" alt="Кот в плаще.">
         </picture>
         <img class="header__logo-text" src="/images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи.">
@@ -48,22 +47,25 @@
   </header>
   <main class="main">
     <section class="program">
-      <div class="program__container">
+      <div class="container">
         <h1 class="program__header-title heading-title">Подбор программы</h1>
-        <p class="program__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="program__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
         <form class="program__form-cat" action="https://echo.htmlacademy.ru" method="get">
           <div class="program__cat-data">
             <label class="program__cat-data-name">
               <span class="program__name">Имя:*</span>
-              <input class="program__cat-data-placeholder" type="text" name="name" placeholder="Барсик">
+              <input class="program__cat-data-placeholder program__name-placeholder" type="text" name="name"
+                placeholder="Барсик">
             </label>
             <label class="program__cat-data-weight">
               <span class="program__weight">Вес (кг):*</span>
-              <input class="program__cat-data-placeholder" type="text" name="weight" placeholder="7">
+              <input class="program__cat-data-placeholder program__weight-placeholder" type="text" name="weight"
+                placeholder="7">
             </label>
             <label class="program__cat-data-age">
               <span class="program__age">Возраст (лет):</span>
-              <input class="program__cat-data-placeholder" type="text" name="age" placeholder="7">
+              <input class="program__cat-data-placeholder program__age-placeholder" type="text" name="age"
+                placeholder="7">
             </label>
           </div>
           <div class="program__radio-container">
@@ -90,37 +92,53 @@
             </div>
           </div>
           <div class="program__contact data-owner">
-            <h2 class="program__contact-data">Контактные данные (владельца кота)</h2>
-            <label class="program__contact-data-email">
-              <span class="program__email">E-mail:*</span>
-              <input class="program__contact-email" type="email" placeholder="кuklachev@gmail.com" name="email"
-                required>
-            </label>
-            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <label class="program__contact-data-number">
-              <span class="program__number">Телефон:*</span>
-              <input class="program__contact-number" type="number" placeholder="8 (960) 900-60-90" name="number" required>
-            </label>
-            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z"
-                stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <div class="program__container-title">
+              <div class="program__contact-container">
+                <h2 class="program__contact-data">Контактные данные (владельца кота)</h2>
+              </div>
+            </div>
+            <div class="program__container">
+              <label class="program__contact-data-email">
+                <span class="program__email">E-mail:*</span>
+                <input class="program__contact-email" type="email" placeholder="кuklachev@gmail.com" name="email"
+                  required>
+              </label>
+              <svg class="program__svg--mail" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <label class="program__contact-data-number">
+                <span class="program__number">Телефон:*</span>
+                <input class="program__contact-number" type="number" placeholder="8 (960) 900-60-90" name="number"
+                  required>
+              </label>
+              <svg class="program__svg--phone" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z"
+                  stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
           </div>
           <div class="program__comment">
-            <h2 class="program__comment-subtitle">
-              <span class="program__comment-subtitle-text">Комментарий</span>
-            </h2>
+            <div class="program__container-title">
+              <div class="program__comment-container">
+                <h2 class="program__comment-subtitle">Комментарий</h2>
+              </div>
+            </div>
             <label for="enter-text">
               <span class="visually-hidden">Ввести текст</span>
             </label>
-            <textarea class="program__textarea" name="textarea" cols="30" rows="10" id="enter-text">Расскажите обо всех повадках кота</textarea>
+            <textarea class="program__textarea" name="textarea" cols="30" rows="10"
+              id="enter-text">Расскажите обо всех повадках кота</textarea>
           </div>
           <div class="program__checkbox-container">
-            <h2 class="program__checkbox-container-additionally">Дополнительно</h2>
+            <div class="program__container-title">
+              <div class="program__additionally-container">
+                <h2 class="program__checkbox-container-additionally">Дополнительно</h2>
+              </div>
+            </div>
             <div class="program__checkbox-group">
               <label class="program__control">
                 <input class="program__control-input" type="checkbox" name="sweetener" checked>
@@ -151,22 +169,24 @@
             </div>
           </div>
           <button class="button button--application" type="submit">отправить заявку</button>
-          <span class="program__required-fields">* — Обязательные поля</span>
+          <p class="program__required-fields">* — Обязательные поля</p>
         </form>
       </div>
     </section>
-    <section class="contact">
-      <div class="contact__container">
-        <h3 class="contact__cooperation">приглашаем к сотрудничеству дилеров!</h3>
-        <p class="contact__address">ул. Большая Конюшенная, д. 19/8
-          <span class="contact__address city">Санкт-Петербург</span>
-        </p>
-        <img class="contact__map" width="320" height="362" src="/images/map-mobile@2x.jpg" alt="Карта">
+    <section class="contact contact__color">
+      <div class="container">
+        <div class="contact__invitation">
+          <h3 class="contact__cooperation">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="contact__address">ул. Большая Конюшенная, д. 19/8
+            <span class="contact__address city">Санкт-Петербург</span>
+          </p>
+        </div>
       </div>
+      <img class="contact__map" width="320" height="362" src="/images/map-mobile@2x.jpg" alt="Карта">
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__container">
+    <div class="container">
       <div class="footer__cat-energy">
         <a class="footer__logo cat-energy" href="index.html">
           <img src="../images/logo-text.svg" width="128" height="24" alt="Кэт Энерджи.">

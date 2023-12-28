@@ -12,3 +12,13 @@
   line-height: 20px;
   color: $special-dark-grey;
 }
+
+.contact__invitation {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.contact__color {
+  background-color: $color-section;
+}

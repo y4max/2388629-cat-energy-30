@@ -224,6 +224,7 @@ body {
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  position: relative;
 }
 
 .program__contact-data {
