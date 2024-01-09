@@ -78,7 +78,7 @@
     z-index: -1;
     height: 2px;
     background-color: $bg-color-basic;
-    min-width: 320px;
+    min-width: 300px;
   }
 }
 
@@ -147,7 +147,7 @@
   line-height: 18px;
   color: $special-dark-grey;
   text-transform: uppercase;
-  min-width: 280px;
+  width: 100%;
   min-height: 150px;
   padding-top: 14px;
   padding-left: 15px;
