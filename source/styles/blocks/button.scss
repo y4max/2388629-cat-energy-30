@@ -15,9 +15,27 @@
   margin-top: 3px;
 }
 
+@media (min-width: $tablet-width) {
+  .button--primary {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    position: absolute;
+    top: 36%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    padding: 14px;
+    max-width: 244px;
+    max-height: 54px;
+    margin: 0;
+  }
+}
+
 .button--additional-cards {
   color: $special-dark-grey;
-  background-color: #f2f2f2;
+  background-color: $color-section;
   text-decoration: none;
   padding: 10px 95px;
 }
@@ -27,6 +45,24 @@
   margin-bottom: 21px;
   border: 0 none;
   padding: 10px 44px;
+}
+
+@media (min-width: $tablet-width) {
+  .button--application {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 57px;
+    margin-bottom: 60px;
+    max-width: 284px;
+    padding: 14px 45px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .button--products {

@@ -9,6 +9,17 @@
   text-align: left;
 }
 
+@media (min-width: $tablet-width) {
+  .program__header-title {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 54px;
+    margin-top: 65px;
+  }
+}
+
 .program__text {
   font-family: $oswald-font;
   font-size: 14px;
@@ -20,11 +31,29 @@
   margin-bottom: 39px;
 }
 
+@media (min-width: $tablet-width) {
+  .program__text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 66px;
+  }
+}
+
 .program__cat-data {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
   padding-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__cat-data {
+    flex-direction: column;
+    padding-bottom: 72px;
+  }
 }
 
 .program__cat-data-name,
@@ -40,8 +69,34 @@
   align-items: center;
 }
 
+@media (min-width: $tablet-width) {
+  .program__cat-data-name,
+  .program__cat-data-weight,
+  .program__cat-data-age {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program__weight {
+    width: 88px;
+    text-align: left;
+  }
+}
+
 .program__age {
   width: 94px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__age {
+    width: 147px;
+    text-align: left;
+  }
 }
 
 .program__control-label {
@@ -53,6 +108,17 @@
   padding-left: 45px;
 }
 
+@media (min-width: $tablet-width) {
+  .program__control-label {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 60px;
+  }
+}
+
 .program__contact-data {
   font-family: $oswald-font;
   font-size: 24px;
@@ -61,8 +127,22 @@
   margin: 0;
   margin-top: 26px;
   margin-bottom: 35px;
+  padding-left: 20px;
   text-align: left;
   background-color: $color-mobile;
+}
+
+@media (min-width: $tablet-width) {
+  .program__contact-data {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 65px;
+    margin-bottom: 76px;
+    margin-left: 30px;
+    padding-left: 40px;
+  }
 }
 
 .program__container-title {
@@ -83,15 +163,33 @@
 }
 
 .program__contact-container {
-  max-width: 207px;
+  max-width: 227px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__contact-container {
+    max-width: 622px;
+  }
 }
 
 .program__comment-container {
-  max-width: 141px;
+  max-width: 161px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__comment-container {
+    max-width: 292px;
+  }
 }
 
 .program__additionally-container {
-  min-width: 161px;
+  max-width: 181px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__additionally-container {
+    max-width: 322px;
+  }
 }
 
 .program__container {
@@ -99,6 +197,12 @@
   flex-wrap: wrap;
   gap: 14px;
   position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .program__container {
+    flex-direction: column;
+  }
 }
 
 .program__svg-mail,
@@ -114,6 +218,13 @@
   right: -2%;
 }
 
+@media (min-width: $tablet-width) {
+  .program__svg-mail,
+  .program__svg-phone {
+    right: 0;
+  }
+}
+
 .program__contact-data-email,
 .program__contact-data-number {
   font-family: $oswald-font;
@@ -126,12 +237,30 @@
   align-items: center;
 }
 
+@media (min-width: $tablet-width) {
+  .program__email {
+    min-width: 63px;
+  }
+}
+
 .program__contact-email {
   min-width: 217px;
 }
 
+@media (min-width: $tablet-width) {
+  .program__contact-email {
+    width: 100%;
+  }
+}
+
 .program__contact-number {
   min-width: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__contact-number {
+    width: 100%;
+  }
 }
 
 .program__comment-subtitle-text {
@@ -160,10 +289,30 @@
   line-height: 26px;
   color: $color-text;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   margin-top: 23px;
+  padding-left: 20px;
   background-color: $color-mobile;
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .program__checkbox-container-additionally {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: 30px;
+    margin-top: 65px;
+    margin-bottom: 62px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program__fields {
+    position: relative;
+  }
 }
 
 .program__required-fields {
@@ -173,6 +322,21 @@
   color: $color-text;
   margin: 0;
   margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__required-fields {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0;
+    max-width: 178px;
+    position: absolute;
+    right: -2%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .program__cat-data-placeholder,
@@ -196,6 +360,14 @@
   width: 173px;
 }
 
+@media (min-width: $tablet-width) {
+  .program__name-placeholder,
+  .program__weight-placeholder,
+  .program__age-placeholder {
+    width: 100%;
+  }
+}
+
 .program__radio-container {
   margin-top: 22px;
   display: flex;
@@ -204,6 +376,16 @@
   flex-wrap: wrap;
   gap: 25px;
   padding-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__radio-container {
+    border: 1px solid #e7e7e7;
+    margin: 0;
+    padding-top: 28px;
+    padding-bottom: 32px;
+    padding-left: 27px;
+  }
 }
 
 .program__control {
@@ -260,7 +442,21 @@
   text-align: left;
   margin-top: 24px;
   margin-bottom: 38px;
+  padding-left: 20px;
   background-color: $color-mobile;
+}
+
+@media (min-width: $tablet-width) {
+  .program__comment-subtitle {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 65px;
+    margin-bottom: 87px;
+    margin-left: 30px;
+    padding-left: 40px;
+  }
 }
 
 .program__textarea-text {
@@ -277,6 +473,13 @@
   gap: 25px;
 }
 
+@media (min-width: $tablet-width) {
+  .program__checkbox-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .program__checkbox {
   border: 1px solid $color-checkbox;
   display: block;
@@ -284,6 +487,14 @@
   height: 30px;
   position: absolute;
   top: -6px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__checkbox {
+    width: 40px;
+    height: 40px;
+    top: -12px;
+  }
 }
 
 .program__checkbox::after {
@@ -304,4 +515,16 @@
 
 .program__control-input:checked + .program__checkbox::after {
   opacity: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .program__wrapper-sweetener {
+    margin-right: 123px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program__wrapper-milk {
+    margin-right: 216px;
+  }
 }

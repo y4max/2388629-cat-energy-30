@@ -4,6 +4,12 @@
   position: relative;
 }
 
+@media (min-width: $tablet-width) {
+  .nutrition__item {
+    margin: 0;
+  }
+}
+
 .nutrition__item-header {
   font-family: $oswald-font;
   font-size: 24px;
@@ -12,6 +18,20 @@
   margin: 0;
   padding-top: 30px;
   padding-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__item-header {
+    font-size: 36px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 53px;
+    padding-bottom: 15px;
+    padding-top: 76px;
+  }
 }
 
 .nutrition__item-text {
@@ -28,6 +48,22 @@
   padding-bottom: 23px;
 }
 
+@media (min-width: $tablet-width) {
+  .nutrition__item-text {
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 52px;
+    padding-top: 9px;
+    margin: 0;
+    min-width: 387px;
+    min-height: 96px;
+    border: 0 none;
+  }
+}
+
 .nutrition__link-text {
   font-family: $oswald-font;
   font-size: 16px;
@@ -36,12 +72,31 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .nutrition__link-text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 32px;
+    padding-top: 14px;
+    padding-bottom: 37px;
+  }
+}
+
 .nutrition__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__list {
+    gap: 30px;
+  }
 }
 
 .nutrition__item--slim::before {
@@ -57,6 +112,16 @@
   border: 1px solid $bg-color-basic;
 }
 
+@media (min-width: $tablet-width) {
+  .nutrition__item--slim::before {
+    width: 200px;
+    height: 200px;
+    top: 52%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .nutrition__item--pro::before {
   content: "";
   display: block;
@@ -70,14 +135,31 @@
   border: 1px solid $bg-color-basic;
 }
 
+@media (min-width: $tablet-width) {
+  .nutrition__item--pro::before {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .nutrition__link {
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
+  align-items: center;
   padding-left: 20px;
   padding-bottom: 18px;
   padding-top: 15px;
   gap: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__link {
+    gap: 25px;
+  }
 }
 
 .nutrition__item--slim::after {
@@ -94,6 +176,16 @@
   min-height: 50px;
 }
 
+@media (min-width: $tablet-width) {
+  .nutrition__item--slim::after {
+    width: 140px;
+    height: 194px;
+    top: 48%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .nutrition__item--pro::after {
   content: "";
   display: block;
@@ -106,4 +198,20 @@
   background-position: center;
   min-width: 67px;
   min-height: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__item--pro::after {
+    width: 268px;
+    height: 112px;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__svg {
+    margin-bottom: 23px;
+  }
 }
