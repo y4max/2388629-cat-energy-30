@@ -73,6 +73,16 @@
   border: 0 none;
 }
 
+@media (min-width: $tablet-width) {
+  .button--products {
+    font-style: normal;
+    font-weight: 400;
+    max-width: 250px;
+    margin: 0;
+    margin-top: 32px;
+  }
+}
+
 .button--wide {
   border: 0 none;
   padding-top: 10px;
