@@ -49,3 +49,10 @@ body {
     padding: 0 70px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container__wrapper {
+    width: 1440px;
+    padding: 0 110px;
+  }
+}

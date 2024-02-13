@@ -15,7 +15,7 @@
 .header__navigation {
   display: flex;
   justify-content: space-between;
-  min-height: 65px;
+  max-height: 65px;
 }
 
 .header__navigation-list {
@@ -154,6 +154,7 @@
 .header__logo-text {
   margin-top: 23px;
   margin-bottom: 24px;
+  margin-left: -5px;
 }
 
 @media (min-width: $tablet-width) {
